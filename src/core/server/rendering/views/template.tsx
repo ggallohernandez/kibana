@@ -74,7 +74,7 @@ export const Template: FunctionComponent<Props> = ({
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width" />
-        <title>Elastic Kibana</title>
+        <title>Elastic Backend</title>
         <Fonts url={uiPublicUrl} />
         {/* Favicons (generated from http://realfavicongenerator.net/) */}
         <link
@@ -117,22 +117,22 @@ export const Template: FunctionComponent<Props> = ({
           data-test-subj="kbnLoadingMessage"
         >
           <div className="kbnLoaderWrap">
-            {logo}
+            {/* {logo} */}
             <div
               className="kbnWelcomeText"
               data-error-message={i18n('core.ui.welcomeErrorMessage', {
                 defaultMessage:
-                  'Elastic Kibana did not load properly. Check the server output for more information.',
+                  'Elastic Backend did not load properly. Check the server output for more information.',
               })}
             >
-              {i18n('core.ui.welcomeMessage', { defaultMessage: 'Loading Elastic Kibana' })}
+              {i18n('core.ui.welcomeMessage', { defaultMessage: 'Loading Backend' })}
             </div>
             <div className="kbnProgress" />
           </div>
         </div>
 
         <div className="kbnWelcomeView" id="kbn_legacy_browser_error" style={{ display: 'none' }}>
-          {logo}
+          {/* {logo} */}
 
           <h2 className="kbnWelcomeTitle">
             {i18n('core.ui.legacyBrowserTitle', {
@@ -142,7 +142,7 @@ export const Template: FunctionComponent<Props> = ({
           <div className="kbnWelcomeText">
             {i18n('core.ui.legacyBrowserMessage', {
               defaultMessage:
-                'This Kibana installation has strict security requirements enabled that your current browser does not meet.',
+                'This Backend installation has strict security requirements enabled that your current browser does not meet.',
             })}
           </div>
         </div>
